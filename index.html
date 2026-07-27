@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tea Room — Quiet Loose Leaf Tea Sanctuary</title>
+<meta name="description" content="Welcome to The Tea Room, a serene sanctuary dedicated to loose leaf tea ritual, patient service, and organic ingredients. Find quiet in your day.">
+<link rel="canonical" href="https://the-tea-room-94fb.sites.tibly.ai/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the-tea-room-94fb.sites.tibly.ai/">
+<meta property="og:site_name" content="The Tea Room">
+<meta property="og:title" content="The Tea Room — Quiet Loose Leaf Tea Sanctuary">
+<meta property="og:description" content="Welcome to The Tea Room, a serene sanctuary dedicated to loose leaf tea ritual, patient service, and organic ingredients. Find quiet in your day.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme static {
+  --color-brand-50: #f4f6f3;
+  --color-brand-100: #e4e9e1;
+  --color-brand-200: #cbdaf4;
+  --color-brand-300: #b2c9ac;
+  --color-brand-400: #9cb497;
+  --color-brand-500: #8f9e8b;
+  --color-brand-600: #71806d;
+  --color-brand-700: #576354;
+  --color-brand-800: #3f473d;
+  --color-brand-900: #2c312a;
+
+  --color-accent-50: #fbf8f3;
+  --color-accent-100: #f5eedf;
+  --color-accent-200: #ebdcbF;
+  --color-accent-300: #dfc79d;
+  --color-accent-400: #d1b894;
+  --color-accent-500: #b59b75;
+  --color-accent-600: #937d5c;
+  --color-accent-700: #715f45;
+  --color-accent-800: #4e412f;
+  --color-accent-900: #30281d;
+
+  --color-surface: #eae8e3;
+  --color-surface-light: #f7f6f3;
+  --color-ink: #2c3531;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Source Sans Pro", system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-medium transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-surface-light hover:bg-brand-700 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply btn border border-brand-500 text-ink hover:bg-brand-50/50 active:scale-[0.98];
+  }
+  .card {
+    @apply bg-surface/40 p-8 rounded-lg border border-surface/60 transition-transform duration-300 hover:-translate-y-1;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="sticky top-0 z-50 bg-surface-light/95 backdrop-blur-md border-b border-surface/50 text-ink">
+  <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="/" class="group flex items-center gap-3">
+      <div class="w-8 h-8 rounded-full border border-brand-500/50 flex items-center justify-center group-hover:border-brand-500 transition-colors">
+        <span class="text-brand-600 font-display text-sm">T</span>
+      </div>
+      <span class="font-display text-xl tracking-wide font-semibold text-ink" data-tibly-field="business-name">The Tea Room</span>
+    </a>
+    
+    <nav class="hidden md:flex items-center gap-8 text-sm tracking-wider font-medium uppercase text-ink/80">
+      <a href="/" class="hover:text-brand-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Home</a>
+      <a href="/menu" class="hover:text-brand-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Our Menu</a>
+      <a href="/about" class="hover:text-brand-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Our Story</a>
+      <a href="/visit" class="hover:text-brand-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Visit Us</a>
+    </nav>
+
+    <div class="md:hidden">
+      <!-- Mobile menu toggled via user layout; minimalist menu styling fallback -->
+      <a href="/visit" class="text-xs uppercase tracking-widest font-semibold border-b border-brand-500 pb-0.5 text-brand-600">Find Us</a>
+    </div>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:image-hero -->
+<section class="relative bg-surface-light overflow-hidden py-24 md:py-32 flex items-center border-b border-surface/50" data-block="image-hero">
+  <!-- Botanical Line-Art Illustration Overlay Frame -->
+  <div class="absolute right-0 bottom-0 pointer-events-none opacity-20 md:opacity-30 max-w-sm md:max-w-xl lg:max-w-2xl select-none" aria-hidden="true">
+    <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto text-brand-600 stroke-1 stroke-current">
+      <path d="M 400 400 C 350 350, 320 280, 310 200 C 300 120, 350 50, 400 0" />
+      <path d="M 310 200 C 260 180, 200 190, 160 230 C 130 260, 110 320, 110 400" />
+      <path d="M 350 110 C 280 120, 230 150, 200 210" />
+      <path d="M 230 150 C 210 110, 160 80, 100 90 C 60 97, 20 130, 0 180" />
+      <path d="M 160 230 C 120 220, 70 240, 50 280 C 30 320, 20 360, 0 400" />
+      <!-- Leaf shapes -->
+      <path d="M 310 200 C 320 180, 340 170, 360 175 C 350 195, 330 205, 310 200 Z" fill="none" />
+      <path d="M 200 210 C 190 190, 170 180, 150 185 C 160 205, 180 215, 200 210 Z" fill="none" />
+      <path d="M 160 230 C 150 250, 130 260, 110 255 C 120 235, 140 225, 160 230 Z" fill="none" />
+    </svg>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 w-full relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Typography Block -->
+      <div class="lg:col-span-7 space-y-8">
+        <div class="inline-flex items-center gap-2">
+          <span class="h-[1px] w-8 bg-brand-500"></span>
+          <span class="text-xs uppercase tracking-widest text-brand-600 font-bold">A sanctuary of quiet tea ritual</span>
+        </div>
+        
+        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl text-ink leading-[1.05] tracking-tight font-medium">
+          Patience is its own sweetness.
+        </h1>
+        
+        <p class="font-body text-base md:text-lg text-ink/80 max-w-lg leading-relaxed font-light">
+          We invite you to step away from the modern hurry. Explore our curated library of single-origin loose leaf teas, hand-brewed at steady temperatures in a room dedicated to soft light and slow breath.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <a href="/menu" class="btn-primary px-8 py-3.5 text-sm tracking-wider uppercase font-medium">
+            Explore Our Teas
+          </a>
+          <a href="/visit" class="btn-secondary px-8 py-3.5 text-sm tracking-wider uppercase font-medium">
+            Visit the Room
+          </a>
+        </div>
+      </div>
+
+      <!-- Overlap Media Block -->
+      <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+        <div class="aspect-[4/5] bg-surface rounded-lg overflow-hidden border border-surface/80 shadow-sm relative z-10">
+          <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=80&w=800" 
+               alt="A delicate ceramic tea bowl rests on a rustic wooden table with steam rising slowly" 
+               class="w-full h-full object-cover">
+        </div>
+        <!-- Shadow Accent Box behind -->
+        <div class="absolute -inset-4 bg-accent-100 rounded-lg -z-0 translate-x-2 translate-y-2 opacity-50"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:image-hero -->
+<!-- block:warm-intro -->
+<section class="py-24 bg-surface" data-block="warm-intro">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      
+      <!-- Sticky Left Side Header -->
+      <div class="lg:col-span-5 lg:sticky lg:top-28">
+        <p class="text-xs uppercase tracking-widest text-accent-600 font-bold mb-4">Our Philosophy</p>
+        <h2 class="font-display text-3xl md:text-4xl text-ink leading-tight font-semibold">
+          We treat the preparation of tea not as a transaction, but as a meditation.
+        </h2>
+        <div class="mt-8">
+          <span class="text-sm font-semibold tracking-wider text-brand-700 block mb-1">Opened Spring 2019</span>
+          <span class="text-xs text-ink/60 font-light block" data-tibly-field="address">128 Sage Way, Suite A, Portland, Oregon 97201</span>
+        </div>
+      </div>
+
+      <!-- Right Side Narrative Columns -->
+      <div class="lg:col-span-7 space-y-12 text-ink/80 font-body text-base md:text-lg leading-relaxed font-light">
+        <p>
+          Every leaf in <span data-tibly-field="business-name">The Tea Room</span> tells a quiet story of geography, weather, and patient hands. We travel directly to family estates in Uji, Darjeeling, and Fujian to select harvests that prioritize soil health and traditional processing over industrial yields.
+        </p>
+        
+        <p>
+          Our space is arranged to honor your stillness. You will find no loud espresso grinds, no blaring background speakers, and no fast-paced lines. Instead, water is boiled in heavy cast iron tetsubin kettle styles, and tea is steeped at your table using simple clay vessels suited perfectly to each leaf's natural character.
+        </p>
+
+        <div class="grid grid-cols-2 gap-8 pt-6 border-t border-brand-900/10">
+          <div>
+            <span class="font-display text-4xl text-brand-600 block mb-2">42</span>
+            <span class="text-xs uppercase tracking-wider text-ink/60 font-semibold">Rare Harvests Curated</span>
+          </div>
+          <div>
+            <span class="font-display text-4xl text-accent-500 block mb-2">92°</span>
+            <span class="text-xs uppercase tracking-wider text-ink/60 font-semibold">Perfect Average Steeping</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /block:warm-intro -->
+<!-- block:offering-cards -->
+<section class="py-24 bg-surface-light" data-block="offering-cards">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center max-w-xl mx-auto mb-16 space-y-4">
+      <p class="text-xs uppercase tracking-widest text-brand-600 font-bold">The Library</p>
+      <h2 class="font-display text-3xl md:text-4xl text-ink font-semibold">A slow service for beautiful steeps</h2>
+      <p class="font-body text-sm text-ink/70 font-light">Each selection is served tableside in traditional earthenware with small, warming bites designed to balance clean flavor notes.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="card flex flex-col justify-between h-full group">
+        <div class="space-y-6">
+          <div class="aspect-[3/2] rounded overflow-hidden mb-6 bg-surface">
+            <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&q=80&w=600" 
+                 alt="Delicate pale green tea leaves steeping in a clear glass teapot" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between items-baseline">
+              <h3 class="font-display text-xl text-ink font-medium">Single-Estate Green Teas</h3>
+              <span class="text-xs tracking-wider text-brand-600 uppercase font-semibold">Uji & Shizuoka</span>
+            </div>
+            <p class="text-sm font-light text-ink/70 leading-relaxed">
+              Vibrant, oceanic senchas and light-roasted hojichas prepared in classical Japanese Kyusu clay teapots to maintain their delicate temperature balance.
+            </p>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-brand-900/5 mt-6">
+          <a href="/menu" class="text-xs uppercase tracking-widest font-bold text-brand-700 hover:text-brand-800 transition-colors flex items-center gap-2">
+            View Selections <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card flex flex-col justify-between h-full group">
+        <div class="space-y-6">
+          <div class="aspect-[3/2] rounded overflow-hidden mb-6 bg-surface">
+            <img src="https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?auto=format&fit=crop&q=80&w=600" 
+                 alt="Rich dark oolong tea liquid poured gently into small clay cups" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between items-baseline">
+              <h3 class="font-display text-xl text-ink font-medium">Aged Oolong & Pu-erh</h3>
+              <span class="text-xs tracking-wider text-brand-600 uppercase font-semibold">Yunnan & Wuyi</span>
+            </div>
+            <p class="text-sm font-light text-ink/70 leading-relaxed">
+              Rich, deeply fermented cakes and mountain-grown oolongs. Perfect for complex, multiple-steep Gaiwan style appreciation that reveals evolving earthy notes.
+            </p>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-brand-900/5 mt-6">
+          <a href="/menu" class="text-xs uppercase tracking-widest font-bold text-brand-700 hover:text-brand-800 transition-colors flex items-center gap-2">
+            View Selections <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card flex flex-col justify-between h-full group">
+        <div class="space-y-6">
+          <div class="aspect-[3/2] rounded overflow-hidden mb-6 bg-surface">
+            <img src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&q=80&w=600" 
+                 alt="Wild herbal tea dry ingredients showing dried blossoms and roots on a cloth" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between items-baseline">
+              <h3 class="font-display text-xl text-ink font-medium">Mountain Herbals</h3>
+              <span class="text-xs tracking-wider text-brand-600 uppercase font-semibold">Caffeine-Free</span>
+            </div>
+            <p class="text-sm font-light text-ink/70 leading-relaxed">
+              Ethically gathered wild botanicals including mountain chamomile, fresh ginger-root blends, and rare, soothing cedar leaf infusions.
+            </p>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-brand-900/5 mt-6">
+          <a href="/menu" class="text-xs uppercase tracking-widest font-bold text-brand-700 hover:text-brand-800 transition-colors flex items-center gap-2">
+            View Selections <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /block:offering-cards -->
+<!-- block:process-steps -->
+<section class="py-24 bg-surface" data-block="process-steps">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-xl mb-16">
+      <p class="text-xs uppercase tracking-widest text-accent-600 font-bold mb-4">Our Ritual</p>
+      <h2 class="font-display text-3xl md:text-4xl text-ink font-semibold">The quiet steps to beautiful extraction</h2>
+    </div>
+
+    <!-- Steps Layout: Offset and Editorial numbered style -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      
+      <div class="space-y-4">
+        <div class="font-display text-5xl text-brand-500/40 font-light">01</div>
+        <h3 class="font-display text-lg text-ink font-medium">Sourcing Leaf Integrity</h3>
+        <p class="text-sm font-light text-ink/70 leading-relaxed">
+          We source solely whole-leaf teas harvested by growers who prioritize natural biodiversity. No additives, flavorings, or hidden oils are ever introduced.
+        </p>
+      </div>
+
+      <div class="space-y-4 md:translate-y-4">
+        <div class="font-display text-5xl text-brand-500/40 font-light">02</div>
+        <h3 class="font-display text-lg text-ink font-medium">Perfect Spring Water</h3>
+        <p class="text-sm font-light text-ink/70 leading-relaxed">
+          Water quality makes the steep. We filter our soft spring water to an exact, mineral-rich balance that carries delicate leaf compounds beautifully.
+        </p>
+      </div>
+
+      <div class="space-y-4 md:translate-y-8">
+        <div class="font-display text-5xl text-brand-500/40 font-light">03</div>
+        <h3 class="font-display text-lg text-ink font-medium">Vessel Calibration</h3>
+        <p class="text-sm font-light text-ink/70 leading-relaxed">
+          Porous Yixing clay for earthy pu-erh, hand-thrown porcelain for light-floral green teas. Every set is matched to its unique physical properties.
+        </p>
+      </div>
+
+      <div class="space-y-4 md:translate-y-12">
+        <div class="font-display text-5xl text-brand-500/40 font-light">04</div>
+        <h3 class="font-display text-lg text-ink font-medium">Sustained Presence</h3>
+        <p class="text-sm font-light text-ink/70 leading-relaxed">
+          We step back and allow you to appreciate multiple infusions in peace. Enjoy the slow rhythm of expanding leaf aroma at your own natural speed.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /block:process-steps -->
+<!-- block:testimonial -->
+<section class="py-24 bg-brand-50/30 border-y border-surface" data-block="testimonial">
+  <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+    <div class="flex justify-center">
+      <span class="text-accent-500 text-3xl font-display">“</span>
+    </div>
+    
+    <p class="font-display text-2xl md:text-3xl text-ink leading-relaxed font-light">
+      <span data-tibly-field="business-name">The Tea Room</span> has become my weekly pause. It is the only place in the city where I can sit for two uninterrupted hours with a small book and watch a single oolong leaf open slowly in warm water.
+    </p>
+
+    <div class="space-y-1">
+      <span class="block text-xs uppercase tracking-widest text-brand-700 font-bold">Clara Vance</span>
+      <span class="block text-xs text-ink/50 font-light">Portland, Oregon</span>
+    </div>
+  </div>
+</section>
+<!-- /block:testimonial -->
+<!-- block:visit-cta -->
+<section class="py-24 bg-surface-light relative overflow-hidden" data-block="visit-cta">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Informational column -->
+      <div class="space-y-8">
+        <span class="text-xs uppercase tracking-widest text-brand-600 font-bold block">Slow Sanctuary Doors</span>
+        <h2 class="font-display text-4xl md:text-5xl text-ink leading-tight font-semibold">Join us for a steep</h2>
+        <p class="font-body text-base text-ink/70 leading-relaxed font-light">
+          No reservations are required for individuals or pairs, though we recommend choosing a quiet morning to sit inside. For small tasting circles and silent tea ceremonies, you are welcome to schedule a structured time.
+        </p>
+
+        <div class="space-y-4 pt-4 border-t border-brand-900/10 text-sm">
+          <div class="flex items-start gap-4">
+            <span class="font-medium text-ink w-20 shrink-0">Open Hours:</span>
+            <span class="text-ink/80" data-tibly-field="hours">Wednesday through Sunday, 9:00 AM to 5:00 PM</span>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="font-medium text-ink w-20 shrink-0">Address:</span>
+            <span class="text-ink/80" data-tibly-field="address">128 Sage Way, Suite A, Portland, Oregon 97201</span>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="font-medium text-ink w-20 shrink-0">Contact:</span>
+            <a href="mailto:hello@thetearoom.com" class="text-brand-700 hover:underline" data-tibly-field="email">hello@thetearoom.com</a>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="/visit" class="btn-primary tracking-wider uppercase text-xs font-bold">
+            Plan Your Quiet Visit
+          </a>
+        </div>
+      </div>
+
+      <!-- Live Booking Widget Container -->
+      <div class="bg-surface p-8 md:p-10 rounded-lg border border-surface/80">
+        <h3 class="font-display text-xl text-ink font-medium mb-2">Book a Tasting Circle</h3>
+        <p class="text-xs text-ink/70 font-light mb-8">Reserve an hour of guided leaf presentation and tasting sequence led by our team.</p>
+        
+        <!-- Live Calendar Slot Picker Placeholder -->
+        <div data-tibly-booking>
+          <div class="text-xs text-ink/60 font-light py-12 text-center border border-dashed border-brand-500/20 rounded bg-surface-light/40">
+            Online booking is loading — call us if it doesn't appear.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /block:visit-cta -->
+<!-- block:footer -->
+<footer class="bg-surface border-t border-surface/80 text-ink/90 font-body">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 pb-16 border-b border-brand-900/10">
+      
+      <!-- Brand & Description -->
+      <div class="md:col-span-4 space-y-4">
+        <span class="font-display text-2xl tracking-wide block" data-tibly-field="business-name">The Tea Room</span>
+        <p class="text-sm font-light text-ink/70 leading-relaxed max-w-sm">
+          A minimalist sanctuary dedicated to the patient art of loose leaf tea. Grounded in quiet ritual, slow hospitality, and organic ingredients.
+        </p>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div class="md:col-span-2 space-y-4">
+        <h4 class="text-xs uppercase tracking-widest font-bold text-ink/60">Explore</h4>
+        <nav class="flex flex-col gap-2.5 text-sm">
+          <a href="/" class="hover:text-brand-600 transition-colors">Home</a>
+          <a href="/menu" class="hover:text-brand-600 transition-colors">Our Menu</a>
+          <a href="/about" class="hover:text-brand-600 transition-colors">Our Story</a>
+          <a href="/visit" class="hover:text-brand-600 transition-colors">Visit Us</a>
+        </nav>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="md:col-span-3 space-y-4">
+        <h4 class="text-xs uppercase tracking-widest font-bold text-ink/60">Contact</h4>
+        <div class="flex flex-col gap-2.5 text-sm">
+          <a href="tel:5551234567" class="hover:text-brand-600 transition-colors" data-tibly-field="phone">555-123-4567</a>
+          <a href="mailto:hello@thetearoom.com" class="hover:text-brand-600 transition-colors" data-tibly-field="email">hello@thetearoom.com</a>
+          <span class="text-ink/80 leading-relaxed" data-tibly-field="address">128 Sage Way, Suite A, Portland, Oregon 97201</span>
+        </div>
+      </div>
+
+      <!-- Hours & Socials -->
+      <div class="md:col-span-3 space-y-4">
+        <h4 class="text-xs uppercase tracking-widest font-bold text-ink/60">Hours</h4>
+        <p class="text-sm text-ink/80 leading-relaxed" data-tibly-field="hours">Wednesday through Sunday, 9:00 AM to 5:00 PM</p>
+        
+        <div class="pt-2">
+          <div class="flex gap-4" data-tibly-field="links">
+            <a href="https://instagram.com" class="text-sm tracking-wider hover:text-brand-600 transition-colors border-b border-ink/20 pb-0.5">Instagram</a>
+            <a href="https://pinterest.com" class="text-sm tracking-wider hover:text-brand-600 transition-colors border-b border-ink/20 pb-0.5">Pinterest</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-ink/60">
+      <p>&copy; 2026 <span data-tibly-field="business-name">The Tea Room</span>. All rights reserved.</p>
+      <p class="font-light">Design inspired by quiet spaces.</p>
+    </div>
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
